@@ -5,7 +5,7 @@
 # https://docs.docker.com/engine/reference/builder/
 
 ARG PYTHON_VERSION=3.11.4
-FROM python:${PYTHON_VERSION}-slim as base
+FROM --platform=linux/amd64 python:${PYTHON_VERSION}-slim as base
 
 # Prevents Python from writing pyc files.
 ENV PYTHONDONTWRITEBYTECODE=1
@@ -46,4 +46,4 @@ COPY . .
 EXPOSE 8000
 
 # Run the application.
-CMD uvicorn 'main:app' --host=0.0.0.0 --port=8000 --reload
+CMD uvicorn main:app --host=0.0.0.0 --port=8000 --reload
