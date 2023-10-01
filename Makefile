@@ -7,8 +7,3 @@ upload-container:
 docker-local:
 	docker-compose build
 	docker-compose up
-
-
-push-lightsail:
-	docker build -t rtmp_server .
-	aws lightsail push-container-image --region us-east-1 --service-name rtmp-server  --label rtmp-server-4 --image rtmp_server:latest
