@@ -35,10 +35,13 @@ env:
   ECR_REPOSITORY: audio-stream-service/streamer                           # set this to your Amazon ECR repository name
   ECS_SERVICE: audio-streamer-deploy-service                              # set this to your Amazon ECS service name
   ECS_CLUSTER: audio-stream-service-test-Cluster-qAJqgevZVhW9             # set this to your Amazon ECS cluster name
-  ECS_TASK_DEFINITION: audio-streamer-deploy                              # set this to the path to your Amazon ECS task definition
+  ECS_TASK_DEFINITION: .aws/audio-streamer-deploy.json                              # set this to the path to your Amazon ECS task definition
                                                                           # file, e.g. .aws/task-definition.json
   CONTAINER_NAME: audio-reciever                                          # set this to the name of the container in the
                                                                           # containerDefinitions section of your task definition
+  AWS_ACCESS_KEY_ID: "ASIAUNDPWIEVV7HK4SMP"
+  AWS_SECRET_ACCESS_KEY: "//ho4OFEJhfL2grdelI/5ZvIUb+Ltx0zJwyxGETE"
+  AWS_SESSION_TOKEN: "IQoJb3JpZ2luX2VjEP3//////////wEaCXVzLWVhc3QtMiJHMEUCIQCLRp58WEFneoiqN9iKxSXLFdL6azuNlyj3CvrGujJhPwIgZ5kZZ9O23rqt1g2TCOCfL0Gq8gC6rhVtFLE8XlKVfe0q+QII9///////////ARAAGgwzMDMwMjk0MzY3MTUiDEryvij/yQaW5KKfEyrNAu5CZb12OLm6bfwMtjHDDkosHQtmvCZCbNqXDXDSeLuZwjKEEGa0S/9ySnQacmmblM5fMNN0Sk5J791DNFhOxCuxhwcTS+NMnYwHK14WcXmYMYI+r5xs2LRW08zzwQ+NX809z19dc07NARFQq+z1jHj2lGCmTF7For+2Doe+1MTcRge+L7uQSaOZJ/PS6eWy+PX1rW29NSaVDiaCXH/NSDJfqOHa6E/NGNQ2KgUjBa+yebs3ZnPElv0SsbXjEX+9PDUs3qCswshto1rCDO5W0zaGs4vRcdWSTVSdMstRML9PfObF7lh5ncvl6zI/cN9autcMTxXJ2S76mV4dfEfY4qro+yO9t9gCra8Q5uupxxZO3lVjijJieN/gZiLkxgUHI06Ct4IkA6mEzeoFKo7kYR2WiejUQBKDRdMj9W9QpJ8dthpygs+7/5qq1pVA3zDLxueoBjqnAeINa/F2hhA+L10Be1bFNAqf1rMpwNsDX2yjbIr3s6TYxME9ExG5i8Hw0bwU8VQPEQM2a2qDL0pzxJ9CR+roScAdFZ4khqpc5xcPT2+//t4ah16zn/OGm2zbZYYFLQaPEC8sdURMPx/ufe4koQrH+SWygbXRUzq0sQE3BbHCAozH5Kx/rYOHKKXUIPTuQbSe7l6M/O1X83lv2TTpL2OSQf83lc5NAdUl"
 
 
 permissions:
